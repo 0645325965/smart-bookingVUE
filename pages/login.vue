@@ -13,6 +13,8 @@
         <input id="inputPassword" v-model="password" type="password" class="form-control" placeholder="Password" required>
         <div class="text-xs-center">
           <v-btn color="orange" type="submit" >Sign in</v-btn>
+          Or
+          <nuxt-link to="/register">Sign Up </nuxt-link>
         </div>
       </form>
     </v-card>

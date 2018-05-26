@@ -1,15 +1,34 @@
 <template>
-  <div>
-    <h1>Register Member.</h1>
-    <v-text-field v-model="user" label="อีเมลล์" />
-    <v-text-field v-model="pass" label="รหัสผ่าน" />
-    <v-text-field v-model="first_name" label="ชื่อผู้ใช้" />
-    <v-text-field v-model="last_name" label="นามสกุล" />
-    <v-btn color="success" @click="save">บันทึก</v-btn>
-  </div>
+  <v-parallax src="/pic/background.png" height="643">
+    <v-layout>
+      <v-flex xs12 lg6>
+        <h1>Register Member.</h1>
+        <v-text-field v-model="user" label="อีเมลล์" dark />
+        <v-text-field v-model="pass" label="รหัสผ่าน" dark />
+        <v-text-field v-model="first_name" label="ชื่อผู้ใช้" dark />
+        <v-text-field v-model="last_name" label="นามสกุล" dark />
+        <v-btn color="success" @click="save">บันทึก</v-btn>
+    </v-flex></v-layout>
+  </v-parallax>
 </template>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+</style>
 <script>
-// http://localhost:3000/#/student/edit?id=1
 export default {
   data() {
     return {
